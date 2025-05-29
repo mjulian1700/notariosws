@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IngresDesarrollo-Web.config Connection String" description="IngresDesarrollo Connection String used in web.config by the application to access the database." defaultValue="Host=172.21.9.102;Port=25680;Database=ingresospr;UserID=xxxxxx;Password=yyyyyy;Date_format=GERMAN;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IngresDesarrollo']/@connectionString" />
+  </parameter>
+  <parameter name="IngresContigencia-Web.config Connection String" description="IngresContigencia Connection String used in web.config by the application to access the database." defaultValue="Host=172.21.9.100;Port=25680;Database=ingresos;UserID=xxxxxx;Password=yyyyyy;Date_format=GERMAN;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IngresContigencia']/@connectionString" />
+  </parameter>
+  <parameter name="IngresProduccion-Web.config Connection String" description="IngresProduccion Connection String used in web.config by the application to access the database." defaultValue="Host=172.21.9.46;Port=25680;Database=ingresos;UserID=xxxxxx;Password=yyyyyy;Date_format=GERMAN;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IngresProduccion']/@connectionString" />
+  </parameter>
+  <parameter name="SqlProduccion1-Web.config Connection String" description="SqlProduccion1 Connection String used in web.config by the application to access the database." defaultValue="Data Source=172.17.200.114; Initial Catalog=FwyLicPueDB;Persist Security Info=True;User ID=xxxxxx;Password=yyyyyy;Encrypt=False;TrustServerCertificate=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlProduccion1']/@connectionString" />
+  </parameter>
+  <parameter name="SqlProduccion2-Web.config Connection String" description="SqlProduccion2 Connection String used in web.config by the application to access the database." defaultValue="Data Source=172.17.200.131; Initial Catalog=SILC;Persist Security Info=True;User ID=xxxxxx;Password=yyyyyy;Encrypt=False;TrustServerCertificate=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SqlProduccion2']/@connectionString" />
+  </parameter>
+</parameters>
