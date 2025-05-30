@@ -12,5 +12,6 @@ namespace APINotarios.BusinessLogic.Interface
 		Enajenante admEnajenante(int ambiente, P_Enajentantes dtr);
 		OutAdquiriente adquiriente(int ambiente, InAdquiriente dtr);
 		Out_Inmueble admonInmueble(int ambiente, In_Inmueble dtr);
+		Out_NotariosISR notarioISR(int ambiente, In_NotariosISR dtr);
 	}	
 }

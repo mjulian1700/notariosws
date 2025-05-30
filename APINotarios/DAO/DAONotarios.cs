@@ -62,5 +62,18 @@ namespace APINotarios.DAO
 
 			return resultado;
 		}
+
+		public static Out_NotariosISR notarioISR(int ambiente, In_NotariosISR dtr)
+		{
+			Out_NotariosISR resultado = new Out_NotariosISR();
+			String cadCon = sqlClass.IngressConnection(ambiente);
+			using (IngresConnection conn = new IngresConnection(cadCon))
+			{
+				Debug.WriteLine("conection-------" + cadCon);
+				resultado = Procedimientos.notarioISR(conn, dtr);
+			}
+
+			return resultado;
+		}
 	}
 }

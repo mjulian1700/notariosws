@@ -66,5 +66,20 @@ namespace APINotarios.Controllers
 			return resultado;
 		}
 
+		[System.Web.Http.Route("Notarios_ISR")]
+		[System.Web.Http.HttpPost]
+		public Out_NotariosISR Post([FromBody] In_NotariosISR datos)
+		{
+			Out_NotariosISR resultado = new Out_NotariosISR();
+
+			ArchivoLog.CreateLog(Token.GetId(datos.ambiente.ToString()));
+			ArchivoLog.EscribirLog(JsonConvert.SerializeObject(datos), TraceEventType.Resume);
+
+			INotarios call = new NotariosImp();
+			resultado = call.notarioISR(datos.ambiente, datos);
+			ArchivoLog.EscribirLog(JsonConvert.SerializeObject(resultado), TraceEventType.Resume);
+			return resultado;
+		}
+
 	}
 }

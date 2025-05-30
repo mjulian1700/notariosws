@@ -30,6 +30,11 @@ namespace APINotarios.BusinessLogic.Implementation
 			return DAONotarios.admonInmueble(ambiente, dtr);
 		}
 
+		public Out_NotariosISR notarioISR(int ambiente, In_NotariosISR dtr)
+		{
+			return DAONotarios.notarioISR(ambiente, dtr);
+		}
+
 		public void Dispose()
 		{
 			throw new NotImplementedException();

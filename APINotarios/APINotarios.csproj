@@ -204,9 +204,15 @@
     <Compile Include="Log\ArchivoLog.cs" />
     <Compile Include="Models\Cabeceras.cs" />
     <Compile Include="Models\Enajenante.cs" />
+    <Compile Include="Models\InAdquiriente.cs" />
     <Compile Include="Models\InReferencia.cs" />
+    <Compile Include="Models\In_Inmueble.cs" />
+    <Compile Include="Models\In_NotariosISR.cs" />
     <Compile Include="Models\Mensaje.cs" />
+    <Compile Include="Models\OutAdquiriente.cs" />
     <Compile Include="Models\OutReferencia.cs" />
+    <Compile Include="Models\Out_Inmueble.cs" />
+    <Compile Include="Models\Out_NotariosISR.cs" />
     <Compile Include="Models\P_Enajentantes.cs" />
     <Compile Include="Models\UserConection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

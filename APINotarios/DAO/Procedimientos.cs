@@ -434,5 +434,96 @@ namespace APINotarios.DAO
 			return ans;
 		}
 
+		public static Out_NotariosISR notarioISR(IngresConnection conn, In_NotariosISR dtr)
+		{
+			Out_NotariosISR ans = new Out_NotariosISR();
+			IngresDataReader idr = null;
+			IngresCommand cmd = null;
+			try
+			{
+				conn.Open();
+			}
+			catch (IngresException inex)
+			{
+				Debug.WriteLine("Conn=" + conn.State + " " + inex.Message.ToString());
+				System.Diagnostics.Trace.WriteLine("Error: \n" + inex.ToString());
+				Mensaje error = new Mensaje(-99, "Error En la conexion ", inex.ToString().Trim());
+				return new Out_NotariosISR(error);
+			}
+			try
+			{
+
+				Debug.WriteLine("Conn TRY=" + conn.State);
+				String Param = "(";
+				Param += $"pi_no_ticket={dtr.pi_no_ticket},";
+				Param += $"pc_fol_ope_not={dtr.pc_fol_ope_not},";
+				Param += $"pi_tipo_declaracion='{dtr.pi_tipo_declaracion}',";
+				Param += $"pi_tipo_calculo='{dtr.pi_tipo_calculo}',";
+				Param += $"pi_causa_exencion='{dtr.pi_causa_exencion}',";
+				Param += $"pi_no_complementaria='{dtr.pi_no_complementaria}',";
+				Param += $"pd_fecha_anterior={dtr.pd_fecha_anterior},";
+				Param += $"pm_ingreso_enajena={dtr.pm_ingreso_enajena},";
+				Param += $"pf_ingreso_udis={dtr.pf_ingreso_udis},";
+				Param += $"pf_excedente_udis={dtr.pf_excedente_udis},";
+				Param += $"pm_ing_gravado={dtr.pm_ing_gravado},";
+				Param += $"pm_ing_exento={dtr.pm_ing_exento},";
+				Param += $"pc_causa_no_pago='{dtr.pc_causa_no_pago}' ,";
+				Param += $"pm_deducciones='{dtr.pm_deducciones}' ,";
+				Param += $"pm_pago_provisional='{dtr.pm_pago_provisional}' ,";
+				Param += $"pm_monto_anterior='{dtr.pm_monto_anterior}' ,";
+				Param += $"pd_fecha_operacion_not='{dtr.pd_fecha_operacion_not}'";
+				Param += ")";
+				String cdtxt = $"{{call n_notarios_isr_p{Param}}}";
+				cmd = new IngresCommand(cdtxt, conn);
+				cmd.CommandType = CommandType.Text;
+				cmd.CommandTimeout = 15;
+				Debug.WriteLine(cdtxt);
+				ArchivoLog.EscribirLog(cdtxt, TraceEventType.Information);
+				Debug.WriteLine("Abrir conexion");
+				idr = cmd.ExecuteReader();
+				Debug.WriteLine("Idr Ejecutado");
+				while (idr.Read())
+				{
+					ans.Field1 = idr.GetDouble(0);
+					ans.Field2 = idr.GetDouble(1);
+					ans.Field3 = idr.GetDouble(2);
+					ans.Field4 = idr.GetDouble(3);
+					ans.Field5 = idr.GetDouble(4);
+					ans.Field6 = idr.GetDouble(5);
+					ans.Field7 = idr.GetDouble(6);
+					ans.Field8 = idr.GetDouble(7);
+					ans.Field9 = idr.GetInt32(8);
+					ans.Field10 = idr.GetString(9);
+				}
+			}
+			catch (IngresException inex)
+			{
+				Debug.WriteLine("Conn=" + conn.State + " " + inex.Message.ToString());
+				System.Diagnostics.Trace.WriteLine("Error: \n" + inex.ToString());
+				Mensaje error = new Mensaje(-99, "Error en la base de datos", inex.ToString().Trim());
+				return new Out_NotariosISR(error);
+			}
+			finally
+			{
+				if (cmd != null)
+					cmd.Dispose();
+				if (idr != null)
+				{
+					if (idr.IsClosed != true)
+						idr.Close();
+					idr.Dispose();
+				}
+				if (conn != null)
+				{
+					Debug.WriteLine("Conexion Cerrada");
+					if (conn.State != ConnectionState.Closed)
+						conn.Close();
+					conn.Dispose();
+				}
+			}
+
+			return ans;
+		}
+
 	}
 }
