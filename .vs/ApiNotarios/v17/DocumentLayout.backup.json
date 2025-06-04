@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|solutionrelative:apinotarios\\businesslogic\\interface\\inotarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|C:\\Users\\usrDell\\source\\repos\\APINotarios\\apinotarios\\dao\\procedimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|solutionrelative:apinotarios\\dao\\procedimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|c:\\users\\usrdell\\source\\repos\\apinotarios\\apinotarios\\dao\\daonotarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|solutionrelative:apinotarios\\dao\\daonotarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|c:\\users\\usrdell\\source\\repos\\apinotarios\\apinotarios\\models\\out_notariosisr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|solutionrelative:apinotarios\\models\\out_notariosisr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|C:\\Users\\usrDell\\source\\repos\\APINotarios\\apinotarios\\dao\\procedimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{071E1381-8E66-494E-A258-B88CD2632AFE}|APINotarios\\APINotarios.csproj|solutionrelative:apinotarios\\dao\\procedimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +46,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Out_NotariosISR.cs",
-              "DocumentMoniker": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\Models\\Out_NotariosISR.cs",
-              "RelativeDocumentMoniker": "APINotarios\\Models\\Out_NotariosISR.cs",
-              "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\Models\\Out_NotariosISR.cs",
-              "RelativeToolTip": "APINotarios\\Models\\Out_NotariosISR.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DAONotarios.cs",
+              "DocumentMoniker": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\DAO\\DAONotarios.cs",
+              "RelativeDocumentMoniker": "APINotarios\\DAO\\DAONotarios.cs",
+              "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\DAO\\DAONotarios.cs",
+              "RelativeToolTip": "APINotarios\\DAO\\DAONotarios.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAcwE4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T19:23:17.982Z",
+              "WhenOpened": "2025-06-03T19:12:43.626Z",
               "EditorCaption": ""
             },
             {
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "APINotarios\\Controllers\\NotariosController.cs",
               "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\Controllers\\NotariosController.cs",
               "RelativeToolTip": "APINotarios\\Controllers\\NotariosController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwE4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwF0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:52:01.84Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "APINotarios\\BusinessLogic\\Implementation\\NotariosImp.cs",
               "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\BusinessLogic\\Implementation\\NotariosImp.cs",
               "RelativeToolTip": "APINotarios\\BusinessLogic\\Implementation\\NotariosImp.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCIAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAowCcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:31:44.136Z",
               "EditorCaption": ""
@@ -91,20 +91,20 @@
               "RelativeDocumentMoniker": "APINotarios\\BusinessLogic\\Interface\\INotarios.cs",
               "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\BusinessLogic\\Interface\\INotarios.cs",
               "RelativeToolTip": "APINotarios\\BusinessLogic\\Interface\\INotarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T16:57:59.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Procedimientos.cs",
               "DocumentMoniker": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\DAO\\Procedimientos.cs",
               "RelativeDocumentMoniker": "APINotarios\\DAO\\Procedimientos.cs",
               "ToolTip": "C:\\Users\\usrDell\\source\\repos\\APINotarios\\APINotarios\\DAO\\Procedimientos.cs",
               "RelativeToolTip": "APINotarios\\DAO\\Procedimientos.cs",
-              "ViewState": "AgIAAKUBAAAAAAAAAAAAALQBAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAA4CAAAAAAAAAAAqwG4CAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T23:10:31.716Z",
               "EditorCaption": ""
